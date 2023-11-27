@@ -3,21 +3,21 @@ const { Schema, model } = require("mongoose");
 const schema = new Schema({
   tittle: {
     type: String,
-    required: true,
+    // required: true,
   },
-  blogImage: [{ type: String }],
+  blogImage: { type: String },
   description: {
     type: String,
-    required: true,
+    // required: true,
   },
   metaDescription: {
     type: String,
-    required: true,
+    // required: true,
   },
   tags: [
     {
       type: String,
-      required: true,
+      // required: true,
     },
   ],
   createdAt: {
